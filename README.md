@@ -18,7 +18,7 @@ known scams.
 | `src/mikiwame/adversarial.py` | a second model tries to overturn the preliminary verdict |
 | `src/mikiwame/aggregate.py`, `rubric.py` | weights, hard rules, the signal catalogue (ES/EN) |
 | `src/mikiwame/llm/` | provider client, model registry with a privacy policy, router with a budget |
-| `src/mikiwame/bot/`, `web/` | Telegram bot and website (the same analysis) |
+| `src/mikiwame/bot/`, `web/` | Telegram bot, website (the same analysis) and `bot-archived` (the fixed-text bot of the closed project) |
 | `evaluation/` | measures red precision first (a legitimate ad in red is the worst failure) |
 | `tests/fixtures/` | 37 invented cases, ES, with synthetic screenshots; one is a prompt-injection case |
 | `docs/` | the static archive site (built by `tools/build_site.py`) |

@@ -47,6 +47,14 @@ def _bot(_: argparse.Namespace) -> int:
     return 0
 
 
+def _bot_archived(_: argparse.Namespace) -> int:
+    from mikiwame.bot.archived import run
+
+    _setup_logging()
+    run()
+    return 0
+
+
 def _alert(args: argparse.Namespace) -> int:
     """Works even when the config is broken (that may be why the bot is down): it only needs
     the host gate or the kChat webhook, or else the bot token and the admin chat id from the
@@ -259,6 +267,9 @@ def main(argv: list[str] | None = None) -> int:
         func=_check_config
     )
     sub.add_parser("bot", help="run the Telegram bot (long polling)").set_defaults(func=_bot)
+    sub.add_parser(
+        "bot-archived", help="run the closed-project bot: one fixed text, no model, no database"
+    ).set_defaults(func=_bot_archived)
     sub.add_parser("web", help="run the website (HTTP, behind the relay)").set_defaults(func=_web)
     p = sub.add_parser("alert", help="send a message to the admin chat")
     p.add_argument("text", nargs="+")
