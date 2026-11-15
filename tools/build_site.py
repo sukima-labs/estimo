@@ -26,7 +26,8 @@ CLOSED = "15 de noviembre de 2026"
 CLOSED_EN = "15 November 2026"
 # When the stored data were deleted (the bot's databases). Until it is true, the pages say
 # "will be deleted"; set the date here and rebuild once it is.
-DELETED_ON: str | None = None
+DELETED_ON: str | None = "15 de noviembre de 2026"
+DELETED_ON_EN: str | None = "15 November 2026"
 DELETE_BY = "29 de noviembre de 2026"
 DELETE_BY_EN = "29 November 2026"
 REPO = "https://github.com/sukima-labs/estimo"
@@ -164,7 +165,7 @@ def deletion_es() -> str:
 
 def deletion_en() -> str:
     if DELETED_ON:
-        return f"The service's data were deleted on {DELETED_ON}."
+        return f"The service's data were deleted on {DELETED_ON_EN}."
     return f"The service's data will be deleted before {DELETE_BY_EN} (planned date)."
 
 
@@ -275,7 +276,7 @@ def privacy_es() -> str:
 
   <h2>El servicio que cerró</h2>
   <p>Mientras funcionó (bot de Telegram desde el 1 de octubre de 2026 y web desde el 14 de octubre), trató el anuncio y la conversación que cada persona envió, con un modelo de IA de OpenAI al que se accedía a través de OpenCode, y guardó huellas irreversibles (HMAC) de teléfonos, IBAN, correos y nombres de anunciantes para reconocer anuncios repetidos. Dejó de funcionar el {CLOSED}.</p>
-  <p><strong>{deletion_es()}</strong> Se borra todo: textos e informes, huellas, huellas de fotos, la copia de anuncios usada para comparar precios, los registros de uso y las fichas anónimas.</p>
+  <p><strong>{deletion_es()}</strong> Se borró todo: textos e informes, huellas, huellas de fotos, la copia de anuncios usada para comparar precios y las fichas anónimas. Quedan solo los registros técnicos del servidor (identificador de Telegram y hora, sin contenido) y las copias de seguridad automáticas del servidor, que caducan solas y desaparecen con él cuando se elimine, previsto hacia el 29 de noviembre de 2026.</p>
 
   <h2>Responsable y tus derechos</h2>
   <p>Patricio Llorens. Para acceso, rectificación, supresión, oposición o limitación, o si eres propietario y crees que tus datos aparecían por error: <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
@@ -296,14 +297,14 @@ def privacy_en() -> str:
         + f"""  <a class="langs" href="{BASE}/privacidad/" hreflang="es" lang="es">Español</a>
   <p><a href="{BASE}/en/">← ¿Es timo?</a></p>
   <h1>Privacy policy</h1>
-  <p class="lead">Last updated: {DELETED_ON or CLOSED_EN}.</p>
+  <p class="lead">Last updated: {DELETED_ON_EN or CLOSED_EN}.</p>
 
   <h2>This site</h2>
   <p>It is static: no forms, no cookies, no analytics, and it stores nothing about visitors. It is served by GitHub Pages, which may log IP addresses under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">its own policy</a>.</p>
 
   <h2>The service that closed</h2>
   <p>While it ran (a Telegram bot from 1 October 2026 and a website from 14 October), it processed the listing and the conversation each person sent, with an OpenAI AI model reached through OpenCode, and kept irreversible fingerprints (HMAC) of advertisers' phones, IBANs, emails and names to recognise repeated ads. It stopped on {CLOSED_EN}.</p>
-  <p><strong>{deletion_en()}</strong> Everything goes: texts and reports, fingerprints, photo fingerprints, the listings copy used for price comparison, usage logs and the anonymous case sheets.</p>
+  <p><strong>{deletion_en()}</strong> Everything was deleted: texts and reports, fingerprints, photo fingerprints, the listings copy used for price comparison and the anonymous case sheets. Only the server's technical logs (Telegram identifier and time, no content) and its automatic backups remain; they expire on their own and disappear with the server when it is removed, planned around 29 November 2026.</p>
 
   <h2>Controller and your rights</h2>
   <p>Patricio Llorens. For access, rectification, erasure, objection or restriction, or if you are a landlord who thinks your data appeared by mistake: <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
