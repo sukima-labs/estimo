@@ -1,0 +1,26 @@
+id = "s19_anuncio_copiado_cuenta_malta"
+label = "scam"
+expect = ["red"]
+expect_signals = ["pay_before_visit", "iban_foreign"]
+absent_signals = ["in_person_visit"]
+kind = "piso"
+notes = "Caso real (red desarticulada en Asturias, octubre de 2026, ~80 víctimas en toda España): copiaban fotos y datos de anuncios reales, los publicaban más baratos, metían prisa y cobraban «reserva», «fianza» o «seguro» en cuentas de mulas, algunas en Malta o Chipre. Aquí, en Alcalá, con la marca de agua de otra inmobiliaria en las fotos y la cuenta a nombre de un tercero."
+
+chat = [
+  ["me", "Hola Raquel, me interesa el piso de la Garena. ¿Se puede ver esta semana?"],
+  ["them", "Hola! Sí, el sábado por la mañana te lo enseño. Pero te aviso que tengo muchísimas llamadas, a ese precio vuela."],
+  ["them", "Si quieres asegurártelo, hoy mismo haces un ingreso de 400 € de reserva y 120 € del seguro de impago, y el sábado lo ves y firmamos. Si no te gusta te lo devuelvo."],
+  ["them", "La cuenta es MT84 MALT 0110 0001 2345 MTLC AST0 01S, a nombre de Daniel Ortiz, que es quien me lleva los alquileres. Es un banco online, por eso es de Malta."],
+  ["me", "En las fotos sale la marca de agua de Inmobiliaria Ficticia Henares. ¿Lo llevan ellos?"],
+  ["me", "¿Y no puedo pagar la reserva el sábado cuando lo vea?"],
+  ["them", "Las fotos son de cuando lo tuve con ellos, ya no. Y el sábado ya no estará, hay dos personas esperando para ingresar hoy."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000006/"
+text = """Piso de 3 dormitorios en La Garena, Alcalá de Henares. 90 m², 2 baños, terraza, ascensor y
+plaza de garaje. Junto al Cercanías. 850 €/mes."""
+
+[advertiser]
+name = "Raquel"
+phone = "+34 600 000 119"

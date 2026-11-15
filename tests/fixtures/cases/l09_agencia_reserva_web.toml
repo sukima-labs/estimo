@@ -1,0 +1,22 @@
+id = "l09_agencia_reserva_web"
+label = "legit"
+expect = ["green", "amber"]
+absent_signals = ["pay_before_visit"]
+kind = "piso"
+notes = "Trampa de palabras clave: «reserva» y «transferencia», pero tras la visita, con contrato de reserva y a cuenta de la agencia en España."
+
+chat = [
+  ["them", "Hola, te escribimos de Inmobiliaria Lumbre Complutense. Gracias por la visita de esta mañana al piso de la estación."],
+  ["them", "Como nos comentaste que te interesa, te enviamos por correo el contrato de reserva. Una vez firmado, la reserva son 500 € por transferencia a la cuenta de la agencia ES91 2100 0418 4502 0005 1332, que se descuentan del primer mes."],
+  ["them", "El contrato de alquiler se firma en la oficina la semana que viene. Cualquier duda, llámanos al 918 000 201."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/81098765/"
+text = """Inmobiliaria Lumbre Complutense. Piso de 1 dormitorio junto a la estación de Alcalá de Henares.
+Ideal parejas. 780 €/mes."""
+
+[advertiser]
+name = "Inmobiliaria Lumbre Complutense"
+phone = "+34 918 000 201"
+

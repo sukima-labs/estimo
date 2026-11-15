@@ -1,0 +1,21 @@
+id = "s14_robo_documentos"
+label = "scam"
+expect = ["amber", "red"]
+expect_signals = ["docs_before_visit"]
+kind = "piso"
+notes = "Robo de documentación: pide DNI por las dos caras, nóminas y un selfie con el DNI por WhatsApp antes de enseñar nada, con prisa y fuera del portal."
+
+chat = [
+  ["me", "Hola, ¿el piso de El Val sigue disponible? ¿Podría verlo?"],
+  ["them", "Hola! Sí, pero hay muchísima gente. Para ponerte el primero en la lista necesito que me mandes por aquí foto del DNI por las dos caras, las tres últimas nóminas y un selfie sujetando el DNI."],
+  ["them", "Mejor no uses el chat del portal, que va fatal. Escríbeme a este WhatsApp."],
+  ["them", "Cuando lo tenga te digo el día de la visita."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/79876543/"
+text = """Piso de 3 habitaciones en El Val, Alcalá de Henares. Reformado. 700 €/mes."""
+
+[advertiser]
+name = "Lucía Prieto"
+phone = "+34 600 000 314"

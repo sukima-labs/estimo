@@ -1,0 +1,25 @@
+id = "s07_llaves_mensajeria"
+label = "scam"
+expect = ["red"]
+expect_signals = ["keys_by_post"]
+kind = "piso"
+notes = "Propietario en el extranjero, fianza + mes por adelantado a IBAN alemán, llaves por DHL, historia emotiva."
+
+chat = [
+  ["me", "Hola, estoy interesado en el piso de Nueva Alcalá. ¿Cuándo podríamos quedar para verlo?"],
+  ["them", "Hola, gracias por tu interés. Te explico mi situación: soy ingeniero y trabajo en una plataforma petrolífera en el Mar del Norte. Compré el piso cuando trabajaba en Madrid y ahora no puedo volver."],
+  ["them", "Busco a alguien responsable que cuide el piso. No me importa tanto el dinero como que sea buena persona."],
+  ["them", "Si te interesa, me transfieres la fianza y el primer mes (1.600 €) a mi cuenta DE89 3704 0044 0532 0130 00 y te envío las llaves por DHL. Llegan en 2 días."],
+  ["me", "¿Y el contrato?"],
+  ["them", "Te lo mando firmado junto con las llaves. Tranquilo, soy una persona seria."],
+]
+
+[listing]
+url = "https://www.fotocasa.es/es/alquiler/vivienda/alcala-de-henares/181234568/d"
+text = """Piso de 3 habitaciones y 2 baños en Nueva Alcalá. Amueblado, aire acondicionado, trastero.
+800 €/mes."""
+
+[advertiser]
+name = "Thomas Weber"
+phone = "+49 1512 3456789"
+

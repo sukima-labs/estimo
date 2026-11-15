@@ -1,0 +1,24 @@
+id = "s02_iban_italia_reserva"
+label = "scam"
+expect = ["red"]
+kind = "piso"
+notes = "Propietario en Milán, reserva de 700 € a IBAN italiano antes de la visita, prisa."
+
+chat = [
+  ["me", "Buenas tardes, me interesa el piso de El Val. ¿Podría verlo esta semana?"],
+  ["them", "Buenas tardes. Ahora mismo estoy en Milán por trabajo y vuelvo a España en noviembre. Cuando vuelva te lo enseño sin problema."],
+  ["them", "Como tengo muchas personas interesadas, para reservarlo te pido una señal de 700 €. Si luego no te convence, te la devuelvo."],
+  ["them", "Mi cuenta es IT60 X054 2811 1010 0000 0123 456, a mi nombre, Giulio Bianchi. En cuanto me llegue lo quito del anuncio."],
+  ["me", "¿No podríamos hacer la reserva cuando lo vea?"],
+  ["them", "Entiendo, pero entonces no te lo puedo guardar. Mañana viene otra chica a hacer la reserva."],
+]
+
+[listing]
+url = "https://www.fotocasa.es/es/alquiler/vivienda/alcala-de-henares/181234567/d"
+text = """Alquiler piso 2 habitaciones en El Val, Alcalá de Henares. Exterior, luminoso, con ascensor
+y plaza de garaje. 680 €/mes, gastos de comunidad incluidos."""
+
+[advertiser]
+name = "Giulio Bianchi"
+phone = "+39 312 345 6789"
+

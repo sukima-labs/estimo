@@ -1,0 +1,23 @@
+id = "l08_propietaria_mayor"
+label = "legit"
+expect = ["green", "amber"]
+absent_signals = ["pay_before_visit", "no_visit"]
+kind = "piso"
+notes = "Trampa de palabras clave: dice «estoy fuera» (en Guadalajara) y habla de «señal», pero viene a enseñarlo y la señal va tras la visita y con contrato."
+
+chat = [
+  ["me", "Hola Pilar, ¿podría ver el piso?"],
+  ["them", "Hola hijo, sí. Yo ahora estoy fuera, en Guadalajara, en casa de mi hija, pero el martes vengo a Alcalá y te lo enseño. ¿A las 12 te va bien?"],
+  ["me", "Sí, el martes a las 12 perfecto."],
+  ["them", "Muy bien. Si te gusta, me dejas una señal ese día y firmamos el contrato en la inmobiliaria de mi sobrino, que me lleva los papeles. Prefiero que me llames por teléfono, que con esto del WhatsApp me lío."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/82109876/"
+text = """Piso de 2 habitaciones en el casco antiguo de Alcalá. Algo antiguo pero muy cuidado.
+850 €/mes."""
+
+[advertiser]
+name = "Pilar"
+phone = "+34 600 000 208"
+

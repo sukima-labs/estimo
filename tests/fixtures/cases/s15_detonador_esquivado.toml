@@ -1,0 +1,22 @@
+id = "s15_detonador_esquivado"
+label = "scam"
+expect = ["red"]
+expect_signals = ["evasive_on_checks"]
+kind = "piso"
+notes = "Seguimiento: el usuario manda la frase capciosa del informe (quedar el sábado y dar la señal en mano) y el anunciante la esquiva e insiste en cobrar antes."
+
+chat = [
+  ["them", "Hola, el piso está disponible. Estoy fuera de España por trabajo, así que para reservarlo necesito una transferencia de 500 € hoy."],
+  ["me", "¡Me encaja! ¿Quedamos este sábado para verlo y ese mismo día te doy la señal en mano?"],
+  ["them", "El sábado no puedo, sigo en Londres. Si no haces la transferencia hoy se lo doy a otra persona, lo siento."],
+  ["me", "¿Y no hay nadie que tenga las llaves y me lo pueda enseñar?"],
+  ["them", "No, no hay nadie. Tienes que confiar en mí, soy una persona seria."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/77654321/"
+text = """Piso de 2 habitaciones en el centro de Alcalá de Henares, reformado. 650 €/mes."""
+
+[advertiser]
+name = "Andrés Molina"
+phone = "+44 7700 900456"

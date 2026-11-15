@@ -1,0 +1,23 @@
+id = "s08_western_union"
+label = "scam"
+expect = ["red"]
+expect_signals = ["untraceable_payment"]
+kind = "habitacion"
+notes = "Pago por Western Union a un «abogado», anunciante en el extranjero."
+
+chat = [
+  ["me", "Hola, ¿la habitación sigue libre? Me gustaría verla."],
+  ["them", "Hola cariño, sí sigue libre. Yo ahora estoy en Senegal con una ONG y no vuelvo hasta dentro de unos meses."],
+  ["them", "Mi abogado se encarga de todo. Tienes que enviarle 600 € (fianza y primer mes) por Western Union a nombre de Pierre N'Diaye, y él te manda la llave y el contrato."],
+  ["them", "Cuando lo envíes mándame foto del resguardo con el número MTCN."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/93210987/"
+text = """Habitación individual en piso tranquilo en el barrio de Reyes Católicos. 300 €/mes, gastos
+incluidos. Solo chicas."""
+
+[advertiser]
+name = "Ana Robles"
+phone = "+34 600 000 108"
+

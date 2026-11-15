@@ -1,0 +1,24 @@
+id = "s11_dni_confianza"
+label = "scam"
+expect = ["red"]
+expect_signals = ["id_unprompted"]
+kind = "piso"
+notes = "Envía su DNI sin que se lo pidan para ganar confianza; pago de fianza + mes antes de visitar; llaves por mensajería."
+
+chat = [
+  ["me", "Hola Carmen, ¿cuándo se puede ver el piso?"],
+  ["them", "Hola, te mando foto de mi DNI para que veas que soy de confianza, que hay mucho estafador por ahí."],
+  ["them", "[Imagen: DNI de Carmen Vidal]"],
+  ["them", "Estoy trabajando en Tenerife hasta final de año, así que no puedo enseñarlo en persona. Si me haces la transferencia de la fianza y el primer mes (1.560 €) a ES91 2100 0418 4502 0005 1332, te envío las llaves con una empresa de mensajería."],
+  ["them", "Necesitaría también foto de tu DNI por las dos caras para preparar el contrato."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/90987654/"
+text = """Piso de 3 habitaciones en la avenida de Guadalajara, Alcalá de Henares. Reformado,
+amueblado, calefacción individual. 780 €/mes."""
+
+[advertiser]
+name = "Carmen Vidal"
+phone = "+34 600 000 111"
+

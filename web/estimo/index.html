@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Es timo? · Comprueba un alquiler antes de pagar</title>
+<meta name="description" content="Gratis: pega el anuncio de alquiler y la conversación con el «propietario» (o sube capturas) y te decimos en verde, ámbar o rojo si se parece a estafas conocidas, y por qué.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="¿Es timo?">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="¿Es timo? · Comprueba un alquiler antes de pagar">
+<meta property="og:description" content="Gratis: pega el anuncio de alquiler y la conversación con el «propietario» (o sube capturas) y te decimos en verde, ámbar o rojo si se parece a estafas conocidas, y por qué.">
+<meta property="og:url" content="https://estimo.patriciollorens.com/">
+<meta property="og:image" content="https://estimo.patriciollorens.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="¿Es timo? Comprueba un alquiler antes de pagar">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://estimo.patriciollorens.com/">
+<link rel="alternate" hreflang="es" href="https://estimo.patriciollorens.com/">
+<link rel="alternate" hreflang="en" href="https://estimo.patriciollorens.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://estimo.patriciollorens.com/">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<main>
+  <a class="langs" href="/en/" hreflang="en" lang="en">English</a>
+  <p class="lights">🟢 🟠 🔴</p>
+  <h1>¿Es timo?</h1>
+  <p class="lead">Comprueba un anuncio de alquiler <strong>antes</strong> de pagar nada. Gratis y sin registrarte.</p>
+
+  <!-- analyzer: the guides reuse this block (mikiwame/web/guides.py) -->
+  <form id="form" class="card" novalidate>
+    <label for="text" id="text-label">El anuncio y la conversación con el «propietario»</label>
+    <textarea id="text" placeholder="Pega aquí el texto del anuncio o el enlace, y lo que te ha escrito el anunciante (WhatsApp, correo…)."></textarea>
+    <div class="files">
+      <label class="pick">📎 Añadir capturas<input id="files" type="file" accept="image/*" multiple></label>
+      <p class="hint">Capturas del anuncio y del chat. En el ordenador también puedes pegarlas con Ctrl+V. Como mucho 8.</p>
+      <div id="thumbs" class="thumbs"></div>
+    </div>
+    <div class="actions">
+      <button id="go" class="btn" type="submit">Analizar</button>
+      <button id="example" class="btn secondary" type="button" aria-controls="example-out" aria-expanded="false">👀 Ver un ejemplo</button>
+      <span id="working" hidden><span class="spinner"></span>Analizando… suele tardar menos de un minuto.</span>
+    </div>
+    <p id="error" class="error" role="alert" hidden></p>
+  </form>
+
+  <section id="example-out" hidden>
+    <h2>Ejemplo inventado</h2>
+    <p class="hint">Los datos no son de nadie. Imagina que alguien pega esto:</p>
+    <div id="example-case" class="card example-case"></div>
+    <p class="hint">Y esto es lo que le devolvemos (el informe real de ese caso). Ver el ejemplo no gasta ningún análisis.</p>
+    <div id="example-report" class="card result"></div>
+    <p class="hint">Para enseñárselo a alguien: <a href="/ejemplo">estimo.patriciollorens.com/ejemplo</a></p>
+  </section>
+
+  <section id="out" hidden>
+    <div id="result" class="card result" aria-live="polite"></div>
+    <div class="actions">
+      <button id="add" class="btn" type="button" hidden>Añadir la respuesta del anunciante</button>
+      <button id="again" class="btn secondary" type="button">Analizar otro caso</button>
+    </div>
+  </section>
+  <!-- /analyzer -->
+
+  <h2>Cómo funciona</h2>
+  <ol>
+    <li>Pega el anuncio (texto o enlace) y la conversación con el anunciante, o sube capturas.</li>
+    <li>Te devolvemos un semáforo verde, ámbar o rojo, el porqué de cada señal y qué comprobar.</li>
+    <li>Si te sugerimos una pregunta para el anunciante, añade su respuesta y lo volvemos a mirar todo junto.</li>
+  </ol>
+  <p>También está en Telegram: <a href="https://t.me/EsTimoBot">@EsTimoBot</a>.</p>
+
+  <h2>Qué hace y qué no</h2>
+  <div class="card">
+    <ul>
+      <li>Te dice si el caso <strong>se parece a estafas conocidas</strong>: dinero antes de la visita, propietario en el extranjero, llaves por mensajería, precio muy por debajo de la zona…</li>
+      <li><strong>No afirma que nadie sea un estafador.</strong> Un aviso es una razón para comprobar, no una acusación.</li>
+      <li>No vende nada, no enseña pisos y no contacta con nadie por ti.</li>
+      <li>Está en pruebas: si ves un fallo, nos ayuda mucho que nos lo cuentes en <a href="mailto:info@patriciollorens.com">info@patriciollorens.com</a>.</li>
+    </ul>
+  </div>
+
+  <h2>Regla de oro</h2>
+  <p>No pagues nada, ni reserva ni señal, antes de visitar la vivienda y firmar un contrato. En la Comunidad de Madrid la fianza se deposita en la Agencia de Vivienda Social, y puedes pedir el justificante.</p>
+
+  <h2>Guías</h2>
+  <ul>
+    <li><a href="/guias/propietario-en-el-extranjero">El «propietario en el extranjero»: cómo funciona esta estafa</a></li>
+    <li><a href="/guias/reserva-antes-de-ver-el-piso">Te piden una reserva o señal antes de ver el piso</a></li>
+    <li><a href="/guias/comprobar-propietario">Cómo comprobar al propietario antes de pagar</a></li>
+    <li><a href="/guias/ya-he-pagado">Ya he pagado y creo que es una estafa: qué hacer</a></li>
+    <li><a href="/guias/gastos-de-gestion">Gastos de gestión o comisión al alquilar: ¿los pagas tú?</a></li>
+    <li><a href="/guias/te-piden-el-dni">Te piden el DNI o la nómina antes de ver el piso</a></li>
+    <li><a href="/guias/habitacion-de-estudiante">Buscar habitación de estudiante sin caer en una estafa</a></li>
+  </ul>
+
+  <h2>Avisos</h2>
+  <p>Publicamos cómo operan las estafas de alquiler en el canal <a href="https://t.me/EsTimoAvisos">@EsTimoAvisos</a>, sin datos de nadie.</p>
+
+  <h2>Privacidad, en corto</h2>
+  <ul>
+    <li>Las capturas se leen para el análisis y se descartan.</li>
+    <li>El texto del caso y el informe se guardan 30 días y luego se borran.</li>
+    <li>Teléfonos, IBAN y nombres del anunciante se guardan solo como huella irreversible, para reconocer anuncios que se repiten.</li>
+    <li>El análisis lo hace un modelo de IA de OpenAI que no entrena con estos datos.</li>
+  </ul>
+  <p>Todo el detalle está en la <a href="/privacidad">política de privacidad</a>. ¿Eres propietario y crees que tus datos aparecen por error en nuestro registro? Escríbenos y dejamos de usarlos.</p>
+
+  <footer>
+    Responsable y contacto: Patricio Llorens · <a href="mailto:info@patriciollorens.com">info@patriciollorens.com</a> · <a href="/privacidad">Privacidad</a>
+  </footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

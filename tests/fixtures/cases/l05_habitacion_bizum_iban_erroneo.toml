@@ -1,0 +1,25 @@
+id = "l05_habitacion_bizum_iban_erroneo"
+label = "legit"
+expect = ["green", "amber"]
+kind = "habitacion"
+notes = "Habitación ya visitada; Bizum de la fianza al entrar. El usuario pega un IBAN con un dígito mal copiado."
+
+pasted = "Me ha dado este IBAN para el mes: ES91 2100 0418 4502 0005 1333"
+
+chat = [
+  ["them", "¡Hola! Gracias por venir ayer a ver la habitación. Les has caído muy bien a Marta y a Dani 😊"],
+  ["me", "¡Genial! Me la quedo. ¿Cómo hacemos?"],
+  ["them", "El día que entres firmamos el contrato de la habitación y me haces un Bizum con la fianza (350 €). El mes lo pagas por transferencia a primeros."],
+  ["me", "Perfecto, ¿el día 1 te va bien para entrar?"],
+  ["them", "Sí, el día 1 a las 10 te espero en casa con las llaves."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/85432109/"
+text = """Habitación en piso compartido con dos estudiantes, zona Universidad, Alcalá. 350 €/mes,
+gastos aparte (unos 40 €)."""
+
+[advertiser]
+name = "Irene"
+phone = "+34 600 000 205"
+

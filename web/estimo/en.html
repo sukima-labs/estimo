@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Es timo? · Check a rental before you pay</title>
+<meta name="description" content="Free: paste a rental listing in Spain and your chat with the «landlord» (or upload screenshots) and get a green, amber or red light on whether it looks like known scams, and why.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="¿Es timo?">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="¿Es timo? · Check a rental before you pay">
+<meta property="og:description" content="Free: paste a rental listing in Spain and your chat with the «landlord» (or upload screenshots) and get a green, amber or red light on whether it looks like known scams, and why.">
+<meta property="og:url" content="https://estimo.patriciollorens.com/en/">
+<meta property="og:image" content="https://estimo.patriciollorens.com/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="¿Es timo? Check a rental before you pay">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://estimo.patriciollorens.com/en/">
+<link rel="alternate" hreflang="es" href="https://estimo.patriciollorens.com/">
+<link rel="alternate" hreflang="en" href="https://estimo.patriciollorens.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://estimo.patriciollorens.com/">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<main>
+  <a class="langs" href="/" hreflang="es" lang="es">Español</a>
+  <p class="lights">🟢 🟠 🔴</p>
+  <h1>¿Es timo? <small style="font-weight:400;color:var(--muted);font-size:1rem">(«Is it a scam?»)</small></h1>
+  <p class="lead">Check a rental listing in Spain <strong>before</strong> you pay anything. Free, no sign-up.</p>
+
+  <!-- analyzer: the guides reuse this block (mikiwame/web/guides.py) -->
+  <form id="form" class="card" novalidate>
+    <label for="text" id="text-label">The listing and the conversation with the «landlord»</label>
+    <textarea id="text" placeholder="Paste the text of the listing or its link here, and what the advertiser wrote to you (WhatsApp, email…)."></textarea>
+    <div class="files">
+      <label class="pick">📎 Add screenshots<input id="files" type="file" accept="image/*" multiple></label>
+      <p class="hint">Screenshots of the listing and the chat. On a computer you can also paste them with Ctrl+V. At most 8.</p>
+      <div id="thumbs" class="thumbs"></div>
+    </div>
+    <div class="actions">
+      <button id="go" class="btn" type="submit">Analyse</button>
+      <button id="example" class="btn secondary" type="button" aria-controls="example-out" aria-expanded="false">👀 See an example</button>
+      <span id="working" hidden><span class="spinner"></span>Analysing… it usually takes less than a minute.</span>
+    </div>
+    <p id="error" class="error" role="alert" hidden></p>
+  </form>
+
+  <section id="example-out" hidden>
+    <h2>Invented example</h2>
+    <p class="hint">The details belong to nobody. Imagine someone pastes this:</p>
+    <div id="example-case" class="card example-case"></div>
+    <p class="hint">And this is what we send back (the real report for that case). Seeing the example does not use any analysis.</p>
+    <div id="example-report" class="card result"></div>
+    <p class="hint">To show it to someone: <a href="/en/example">estimo.patriciollorens.com/en/example</a></p>
+  </section>
+
+  <section id="out" hidden>
+    <div id="result" class="card result" aria-live="polite"></div>
+    <div class="actions">
+      <button id="add" class="btn" type="button" hidden>Add the advertiser's answer</button>
+      <button id="again" class="btn secondary" type="button">Analyse another case</button>
+    </div>
+  </section>
+  <!-- /analyzer -->
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Paste the listing (text or link) and your conversation with the advertiser, or upload screenshots. Spanish or English, as it is.</li>
+    <li>You get a green, amber or red light, the reason for each sign, and what to check.</li>
+    <li>If we suggest a question for the advertiser, add their answer and we look at it all together again.</li>
+  </ol>
+  <p>Also on Telegram: <a href="https://t.me/EsTimoBot">@EsTimoBot</a> (it answers in English if your Telegram is in English, or type /english).</p>
+
+  <h2>What it does and does not do</h2>
+  <div class="card">
+    <ul>
+      <li>It tells you whether the case <strong>looks like known scams</strong>: money before a viewing, a landlord abroad, keys sent by courier, a price far below the area…</li>
+      <li><strong>It never claims that anyone is a scammer.</strong> A warning is a reason to check, not an accusation.</li>
+      <li>It sells nothing, shows no flats and contacts nobody on your behalf.</li>
+      <li>It is being tested: if you spot a mistake, telling us at <a href="mailto:info@patriciollorens.com">info@patriciollorens.com</a> helps a lot.</li>
+    </ul>
+  </div>
+
+  <h2>The golden rule</h2>
+  <p>Do not pay anything, not even a booking fee or deposit, before visiting the property and signing a contract. In the Comunidad de Madrid the deposit («fianza») is lodged with the Agencia de Vivienda Social, and you can ask for the receipt.</p>
+
+  <h2>Guides</h2>
+  <ul>
+    <li><a href="/en/guides/landlord-abroad">The «landlord abroad»: how this scam works</a></li>
+    <li><a href="/en/guides/deposit-before-viewing">Asked for a deposit before viewing a flat</a></li>
+    <li><a href="/en/guides/check-the-landlord">How to check the landlord before you pay</a></li>
+    <li><a href="/en/guides/already-paid">I've paid and think it's a scam: what to do</a></li>
+    <li><a href="/en/guides/agency-fees">Agency fees when renting: do you have to pay them?</a></li>
+    <li><a href="/en/guides/asked-for-documents">Asked for your ID or payslip before a viewing</a></li>
+    <li><a href="/en/guides/student-room">Finding a student room without getting scammed</a></li>
+  </ul>
+
+  <h2>Warnings</h2>
+  <p>We post how rental scams work on the channel <a href="https://t.me/EsTimoAvisos">@EsTimoAvisos</a> (in Spanish), with nobody's data.</p>
+
+  <h2>Privacy, in short</h2>
+  <ul>
+    <li>Screenshots are read for the analysis and discarded.</li>
+    <li>The text of the case and the report are kept for 30 days and then deleted.</li>
+    <li>The advertiser's phone numbers, IBANs and names are kept only as an irreversible fingerprint, to recognise listings that repeat.</li>
+    <li>The analysis is done by an OpenAI AI model that does not train on this data.</li>
+  </ul>
+  <p>All the details are in the <a href="/en/privacy">privacy policy</a>. Are you a landlord and think your details are in our registry by mistake? Write to us and we will stop using them.</p>
+
+  <footer>
+    Controller and contact: Patricio Llorens · <a href="mailto:info@patriciollorens.com">info@patriciollorens.com</a> · <a href="/en/privacy">Privacy</a>
+  </footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+id = "l12_detonador_aceptado"
+label = "legit"
+expect = ["green", "amber"]
+absent_signals = ["evasive_on_checks"]
+kind = "piso"
+notes = "Seguimiento: el anunciante pedía una señal para reservar; el usuario manda la frase capciosa y el propietario acepta sin problema la visita y la señal en mano."
+
+chat = [
+  ["them", "Hola, sí, está disponible. Hay bastante gente interesada; si te encaja, se reserva con una señal."],
+  ["me", "¡Me encaja! ¿Quedamos este sábado para verlo y ese mismo día te doy la señal en mano?"],
+  ["them", "Claro, el sábado a las 11 te lo enseño. Si te gusta, me das la señal con un recibo y firmamos el contrato la semana que viene."],
+  ["me", "Perfecto. ¿Me dices la dirección completa con piso y letra para el contrato?"],
+  ["them", "Calle de los Colegios 14, 2º B. Te espero en el portal."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/76543210/"
+text = """Particular alquila piso de 2 habitaciones en el casco histórico de Alcalá de Henares.
+880 €/mes."""
+
+[advertiser]
+name = "Marisa Gómez"
+phone = "+34 600 000 412"

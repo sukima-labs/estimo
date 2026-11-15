@@ -1,0 +1,22 @@
+id = "s09_falsa_garantia_portal"
+label = "scam"
+expect = ["red"]
+expect_signals = ["lookalike_domain"]
+kind = "piso"
+notes = "Falso «Pago Seguro de Idealista» en un dominio que no es del portal; pago antes de ver el piso."
+
+chat = [
+  ["me", "Hola Javier, ¿podría visitar el piso del Chorrillo este jueves?"],
+  ["them", "Hola, ahora mismo estoy en Bilbao por trabajo. Para estas situaciones Idealista tiene un servicio de Pago Seguro: el portal custodia el dinero y no me lo entrega hasta que tú confirmas que el piso te gusta."],
+  ["them", "Solo tienes que pagar la fianza (720 €) en este enlace: https://idealista-pagoseguro.com/reserva/92109876 y recibirás las llaves en tu domicilio."],
+  ["them", "Si el piso no te gusta, Idealista te devuelve el dinero en 24 horas. Es 100% seguro."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/92109876/"
+text = """Piso de 2 dormitorios en el Chorrillo, Alcalá de Henares. Exterior, con balcón. 720 €/mes."""
+
+[advertiser]
+name = "Javier Ortega"
+phone = "+34 600 000 109"
+

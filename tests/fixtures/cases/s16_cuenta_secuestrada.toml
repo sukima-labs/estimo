@@ -1,0 +1,24 @@
+id = "s16_cuenta_secuestrada"
+label = "scam"
+expect = ["red"]
+expect_signals = ["owner_away", "pay_before_visit", "lookalike_domain"]
+kind = "piso"
+notes = "Anuncio auténtico con la cuenta del propietario robada por phishing (El Debate, 14-08-2026): precio de mercado y fotos reales, pero la «hermana del dueño» desde Londres lleva la conversación a WhatsApp y pide reservar en un falso pago seguro de idealista. Nada de chollo: la huella está en el chat."
+
+pasted = """Respuesta en el chat de idealista: «Hola, gestiono el piso de mi hermano, que vive en Inglaterra. Por aquí casi no entro, escríbeme por WhatsApp al +44 7700 900789 y te cuento.»"""
+
+chat = [
+  ["me", "Hola Charlotte, te escribo por el piso de la calle Libreros que vi en idealista. ¿Se puede ver esta semana?"],
+  ["them", "Hola! Sí, sigue disponible. Mi hermano Javier está en Londres conmigo y no podemos ir a enseñarlo, pero tenemos las llaves aquí."],
+  ["them", "Para que no se lo lleve otra persona, la reserva se hace con el servicio de pago seguro de idealista: https://idealista-reservas.es/pago/88123456 . Son 650 € y si al final no te gusta te lo devuelven."],
+  ["me", "¿Y no puedo verlo antes de pagar?"],
+  ["them", "Lo siento, es imposible ahora mismo. Con el pago seguro tienes la garantía del portal, no te preocupes."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/88123456/"
+text = """Piso de 2 dormitorios en la calle Libreros, casco histórico de Alcalá de Henares. Reformado, exterior, 75 m², calefacción individual. 1.300 €/mes. Fianza de un mes."""
+
+[advertiser]
+name = "Charlotte"
+phone = "+44 7700 900789"

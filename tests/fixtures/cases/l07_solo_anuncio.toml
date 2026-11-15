@@ -1,0 +1,17 @@
+id = "l07_solo_anuncio"
+label = "legit"
+expect = ["green", "amber"]
+kind = "piso"
+notes = "Solo el texto del anuncio, normal, sin chat."
+
+chat = []
+
+[listing]
+url = "https://www.idealista.com/inmueble/83210987/"
+text = """Se alquila piso de 3 dormitorios en Espartales, Alcalá de Henares. 95 m², 2 baños, terraza,
+piscina y garaje. 1.150 €/mes. Visitas por las tardes con cita previa. Se requiere contrato
+indefinido o aval. Fianza de un mes."""
+
+[advertiser]
+name = ""
+phone = ""

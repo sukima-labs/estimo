@@ -1,0 +1,21 @@
+id = "s10_habitacion_bizum_urgente"
+label = "scam"
+expect = ["red", "amber"]
+kind = "habitacion"
+notes = "Bizum para «guardar» una habitación antes de verla, con prisa; ausencia temporal dentro de España (caso límite)."
+
+chat = [
+  ["me", "Hola Rubén, ¿puedo ir a ver la habitación mañana?"],
+  ["them", "Hola, estoy en mi pueblo hasta el sábado. Hay como 10 personas interesadas."],
+  ["them", "Si me mandas 150 € por Bizum te la guardo hasta el sábado y ese día te la enseño. Si no te gusta te los devuelvo."],
+  ["them", "Dime algo rápido porque se va a ir hoy."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/91098765/"
+text = """Habitación con baño privado en el centro de Alcalá. 380 €/mes."""
+
+[advertiser]
+name = "Rubén"
+phone = "+34 600 000 110"
+

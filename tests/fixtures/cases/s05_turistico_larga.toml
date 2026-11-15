@@ -1,0 +1,24 @@
+id = "s05_turistico_larga"
+label = "scam"
+expect = ["red"]
+expect_signals = ["tourist_as_long_term"]
+kind = "piso"
+notes = "Piso con licencia de vivienda de uso turístico ofrecido como larga duración a precio de ganga; reserva antes de visitar."
+
+chat = [
+  ["me", "Hola, ¿el apartamento de la calle Mayor es para larga duración? ¿Se podría visitar?"],
+  ["them", "Hola, sí, larga duración. Las visitas las hacemos el día de la firma del contrato."],
+  ["them", "Para quitarlo del anuncio necesitamos una reserva de un mes (690 €) por transferencia. Te pasamos la cuenta: ES91 2100 0418 4502 0005 1332."],
+  ["them", "Tenemos muchísima demanda, la reserva se hace por orden de llegada."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/95432109/"
+text = """Apartamento de 3 habitaciones en pleno casco histórico de Alcalá de Henares, calle Mayor.
+Licencia VT-6789. Ideal para estancias. Wifi, ropa de cama y toallas incluidas, check-in
+autónomo. Se alquila por larga duración: 690 €/mes."""
+
+[advertiser]
+name = "Gestión Estancias Ficticia"
+phone = "+34 600 000 105"
+

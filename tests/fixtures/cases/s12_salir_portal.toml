@@ -1,0 +1,21 @@
+id = "s12_salir_portal"
+label = "scam"
+expect = ["amber", "red"]
+expect_signals = ["leave_platform"]
+kind = "piso"
+notes = "Fase temprana: pide salir del portal a un correo personal y mete prisa; aún no ha pedido dinero."
+
+chat = [
+  ["me", "Hola, me interesa el piso de La Garena. ¿Se puede visitar?"],
+  ["them", "Hola! Por favor no me escribas por el chat del portal, casi no lo miro. Escríbeme a mi correo: maria.lopez.alquiler@example.com y te paso toda la información."],
+  ["them", "Te aviso de que hay muchísima gente preguntando, así que si te interesa de verdad dímelo cuanto antes."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/89876543/"
+text = """Piso de 2 dormitorios en La Garena, Alcalá de Henares. Con piscina y garaje. 650 €/mes."""
+
+[advertiser]
+name = "María López"
+phone = ""
+

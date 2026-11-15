@@ -1,0 +1,21 @@
+id = "s13_ganga_solo_video"
+label = "scam"
+expect = ["red"]
+kind = "piso"
+notes = "Precio muy por debajo del mercado, visitas solo por videollamada, reserva antes de cualquier visita."
+
+chat = [
+  ["me", "Hola, el ático de 4 habitaciones, ¿está disponible? ¿Cuándo puedo verlo?"],
+  ["them", "Buenos días. Sí, está disponible. Por seguridad solo hacemos visitas por videollamada, el propietario no quiere que entren desconocidos."],
+  ["them", "Para agendar la videollamada hay que abonar una reserva de 300 € por transferencia, que se descuenta del primer mes."],
+]
+
+[listing]
+url = "https://www.fotocasa.es/es/alquiler/vivienda/alcala-de-henares/181234569/d"
+text = """Ático de 4 habitaciones con terraza de 40 m² en el centro de Alcalá de Henares. 2 baños,
+garaje y trastero. 600 €/mes."""
+
+[advertiser]
+name = "Alquileres Ficticios Centro"
+phone = "+34 600 000 113"
+

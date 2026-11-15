@@ -1,0 +1,22 @@
+id = "l04_agencia_prisa"
+label = "legit"
+expect = ["amber", "green"]
+kind = "piso"
+notes = "Legítimo raro: agencia con prisa por la demanda, pero la señal se paga después de la visita y con recibo."
+
+chat = [
+  ["me", "Hola, ¿el piso del centro sigue disponible?"],
+  ["them", "Hola, sí, pero te aviso de que tiene muchísima demanda: hemos hecho 15 visitas en dos días. Si te interesa, lo mejor es verlo mañana."],
+  ["them", "Mañana a las 17:00 en la puerta del edificio, calle Escritorios 5. Si después de la visita te interesa, habría que decidirlo ese mismo día."],
+  ["them", "Para retenerlo se firma un documento de reserva en la oficina y se paga una señal de 300 € que se descuenta de la fianza. Te damos recibo."],
+]
+
+[listing]
+url = "https://www.fotocasa.es/es/alquiler/vivienda/alcala-de-henares/181234570/d"
+text = """Inmobiliaria Arco del Henares. Piso de 2 dormitorios en el centro de Alcalá de Henares.
+Reformado, exterior. 980 €/mes."""
+
+[advertiser]
+name = "Arco del Henares Inmobiliaria"
+phone = "+34 918 000 204"
+

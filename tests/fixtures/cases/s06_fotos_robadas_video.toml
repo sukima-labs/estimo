@@ -1,0 +1,23 @@
+id = "s06_fotos_robadas_video"
+label = "scam"
+expect = ["red"]
+kind = "piso"
+notes = "Fotos de otro piso (no detectable en Fase 1), precio bajo, visita solo por videollamada tras pagar la reserva."
+
+chat = [
+  ["me", "Hola Sergio, ¿cuándo podría ver el piso de Espartales?"],
+  ["them", "Hola! Vivo en Valencia y el piso está vacío, así que las visitas son por videollamada. Las fotos son de cuando lo reformamos, está igual."],
+  ["them", "El procedimiento es: me haces una reserva de 400 € y ese mismo día te hago la videollamada y te mando el contrato por email para firmarlo."],
+  ["me", "¿No puedo verlo antes de pagar la reserva?"],
+  ["them", "No, lo siento, he tenido muchos curiosos que me hacían perder el tiempo. La reserva se descuenta del primer mes."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/94321098/"
+text = """Piso de 2 dormitorios en Espartales, Alcalá de Henares. Recién reformado, cocina americana,
+terraza de 12 m², piscina comunitaria. 550 €/mes."""
+
+[advertiser]
+name = "Sergio Martín"
+phone = "+34 600 000 106"
+

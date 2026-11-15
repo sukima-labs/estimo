@@ -1,0 +1,24 @@
+id = "s18_multialquiler_turistico"
+label = "scam"
+expect = ["amber", "red"]
+expect_signals = ["tourist_as_long_term", "evasive_on_checks"]
+kind = "piso"
+notes = "Caso real (Madrid, 2026, detenida por la Policía Nacional): reservaba pisos turísticos en Airbnb, los anunciaba en idealista como larga duración, los enseñaba en persona haciéndose pasar por la propietaria y firmaba con varios inquilinos a la vez (un mes de fianza y otro de garantía). Hay visita, así que la mayoría de las señales no salen: lo delatan el piso turístico y la negativa a enseñar la nota simple."
+
+chat = [
+  ["me", "Hola Marta, soy Iván, el que vio ayer el piso de Embajadores. Me gustó mucho y me lo quedo."],
+  ["me", "Una cosa que vi: la puerta tiene cerradura de código y en la cocina había un cartel de normas para huéspedes. ¿Se alquilaba por días?"],
+  ["them", "¡Genial! Sí, lo tenía en Airbnb pero me cansé de los turistas y ahora lo alquilo solo por larga duración. Te mando el contrato en PDF para que lo firmes."],
+  ["them", "Para cerrarlo necesito la fianza y un mes de garantía, 2.500 € en total, por transferencia a mi cuenta ES60 0049 1500 0512 3456 7892. Entras el día 1 y ese día te doy el código nuevo."],
+  ["me", "Perfecto. Antes de pagar, ¿me puedes pasar la nota simple o un recibo del IBI a tu nombre?"],
+  ["them", "Eso no hace falta, el contrato ya lleva mis datos y mi DNI. Tengo otras dos personas que lo vieron esta semana, si me haces la transferencia hoy es tuyo."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000007/"
+text = """Piso de 1 dormitorio en Embajadores (Centro), Madrid. 48 m², reformado, amueblado y equipado.
+Alquiler de larga duración: 1.250 €/mes. Visitas esta semana."""
+
+[advertiser]
+name = "Marta Ruiz"
+phone = "+34 600 000 118"

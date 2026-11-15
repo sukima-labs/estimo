@@ -1,0 +1,23 @@
+id = "l03_propietario_fuera_real"
+label = "legit"
+expect = ["amber", "green"]
+kind = "piso"
+notes = "Legítimo raro: propietario de verdad en Múnich con IBAN alemán, pero su hermano enseña el piso y se paga tras firmar en una gestoría."
+
+chat = [
+  ["me", "Hola Pablo, me interesa el piso del Ensanche. ¿Se puede ver?"],
+  ["them", "Hola, gracias. Vivo en Múnich desde hace años, pero mi hermano Luis vive en Alcalá y te lo enseña cuando quieras. ¿Te va bien el jueves por la tarde?"],
+  ["me", "Sí, el jueves me va bien. ¿Y el contrato?"],
+  ["them", "El contrato lo gestiona la Gestoría Riaza, en la calle Mayor. Si te gusta el piso, firmamos allí (yo firmo en digital) y después de firmar me haces la transferencia de la fianza y el primer mes a mi cuenta DE89 3704 0044 0532 0130 00."],
+  ["them", "Luis te da las llaves el mismo día de la firma."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/86543210/"
+text = """Piso de 3 habitaciones en el Ensanche, Alcalá de Henares. Amueblado, calefacción de gas,
+cerca del Hospital Príncipe de Asturias. 950 €/mes."""
+
+[advertiser]
+name = "Pablo Hernández"
+phone = "+49 1512 9876543"
+

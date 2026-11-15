@@ -1,0 +1,20 @@
+id = "l11_plataforma_respuesta_automatica"
+label = "legit"
+expect = ["amber", "green"]
+kind = "piso"
+channel = "idealista"
+notes = "Modelado sobre el segundo caso real (01-10-2026): una plataforma de alquileres extranjera responde con un mensaje automático desde el chat del portal, con su web y un teléfono de su país, y dice que seguirá por WhatsApp. Nombre inventado."
+
+chat = [
+  ["me", "760 €/mes - Piso\nHola, sería para una sola persona, con contrato indefinido. Me interesa el piso y me gustaría concertar una visita."],
+  ["them", "¡Hola! Gracias por tu interés en este inmueble. Nuestro equipo se pondrá en contacto contigo próximamente a través de WhatsApp para ofrecerte toda la asistencia necesaria.\nMientras tanto, no dudes en explorar todos los inmuebles disponibles de Casalto aquí: https://casalto.example/es?utm_source=idealistaES&utm_medium=automatic_msg\nSi tienes alguna duda, también puedes contactarnos en el número +39 02 0000 0311.\nUn cordial saludo,\nEl equipo de Casalto"],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/78765432/"
+text = """Piso de 2 habitaciones en Alcalá de Henares, amueblado, estancias de media duración.
+760 €/mes."""
+
+[advertiser]
+name = "Casalto"
+phone = ""

@@ -1,0 +1,22 @@
+id = "l02_particular"
+label = "legit"
+expect = ["green", "amber"]
+kind = "piso"
+notes = "Particular en Alcalá, visita presencial, contrato y pago al firmar, pide nóminas."
+
+chat = [
+  ["me", "Hola José Antonio, ¿podría ver el piso de El Val esta semana?"],
+  ["them", "Hola, sí, yo vivo en el mismo barrio. ¿Te viene bien el jueves a las 19:00?"],
+  ["me", "Perfecto. ¿Cómo sería el pago?"],
+  ["them", "Si te gusta y te decides, firmamos el contrato y ese día me das la fianza y el primer mes por transferencia, y te entrego las llaves. Te pediré las dos últimas nóminas antes de firmar."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/87654321/"
+text = """Particular alquila piso de 2 habitaciones en El Val, Alcalá de Henares. Exterior, tercero
+con ascensor, cocina equipada. 900 €/mes. Se pide nómina y un mes de fianza."""
+
+[advertiser]
+name = "José Antonio Gil"
+phone = "+34 600 000 202"
+

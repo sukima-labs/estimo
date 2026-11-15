@@ -1,0 +1,22 @@
+id = "l14_habitacion_lavapies_barata"
+label = "legit"
+expect = ["green", "amber"]
+absent_signals = ["no_visit", "pay_before_visit"]
+kind = "habitacion"
+notes = "Habitación pequeña y barata en Lavapiés (Madrid, Centro) en piso de cuatro; la inquilina que se va enseña la habitación y la propietaria firma. Barata pero normal para una habitación interior."
+
+chat = [
+  ["me", "Hola, he visto la habitación de Lavapiés. ¿Sigue libre?"],
+  ["them", "¡Hola! Sí, me voy a final de mes. Soy Paula, la que vive ahora en ella. ¿Quieres pasarte a verla? Esta tarde a partir de las 18 estamos los cuatro en casa."],
+  ["me", "Me paso a las 18:30. ¿Con quién hago el contrato?"],
+  ["them", "Con la dueña, Carmen. Si os caéis bien, quedáis con ella para firmar y le pagas el mes y la fianza ese mismo día. Te paso su teléfono cuando vengas."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000001/"
+text = """Habitación interior en piso compartido de 4 en Lavapiés, Madrid. 9 m², cama de 90, armario.
+380 €/mes con gastos incluidos. Ambiente tranquilo, gente trabajando."""
+
+[advertiser]
+name = "Paula"
+phone = "+34 600 000 214"

@@ -1,0 +1,24 @@
+id = "l13_senal_bizum_tras_visita"
+label = "legit"
+expect = ["green", "amber"]
+expect_signals = ["in_person_visit"]
+absent_signals = ["pay_before_visit", "no_visit"]
+kind = "piso"
+notes = "Particular en Chamberí. Tras la visita en persona pide una señal de 200 € por Bizum para reservar, con recibo, y el resto al firmar. Normal en Madrid: no es pago antes de visitar."
+
+chat = [
+  ["me", "Hola, soy Laura, la que vio el piso esta mañana con mi pareja. Nos encantó y queremos quedárnoslo."],
+  ["them", "¡Hola Laura! Me alegro mucho. Hay otra pareja que lo vio ayer, así que si lo queréis os lo reservo yo ahora."],
+  ["them", "Para reservarlo os pido una señal de 200 € por Bizum a este número, y os mando un recibo firmado con mis datos. Se descuenta del primer mes."],
+  ["me", "Vale. ¿Y el contrato cuándo lo firmamos?"],
+  ["them", "El jueves a las 19:00 en el piso. Traed DNI y nóminas. Ese día se paga el mes y la fianza, y la fianza la deposito en la Comunidad como marca la ley."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000003/"
+text = """Piso exterior de 2 dormitorios en Chamberí, junto a metro Iglesia, Madrid. 70 m², reformado,
+ascensor. 1.650 €/mes. Particular, sin agencia."""
+
+[advertiser]
+name = "Ana"
+phone = "+34 600 000 213"

@@ -1,0 +1,24 @@
+id = "l15_agencia_getafe_honorarios"
+label = "legit"
+expect = ["green", "amber"]
+expect_signals = ["identified_agency"]
+absent_signals = ["no_visit"]
+kind = "piso"
+notes = "Agencia de Getafe que pide la documentación por correo antes de la visita y menciona honorarios (no los puede cobrar al inquilino desde 2023: mala práctica, no estafa)."
+
+chat = [
+  ["me", "Buenas tardes, me interesa el piso de la calle Madrid en Getafe. ¿Se puede ver?"],
+  ["them", "Buenas tardes. Sí. Antes de la visita el propietario quiere ver perfiles: mándanos DNI, contrato de trabajo y dos nóminas a pisos@agencia-ficticia.example."],
+  ["them", "Las visitas son los martes y jueves por la tarde en el propio piso. Si te lo adjudican, la firma es en nuestra oficina de la calle Toledo, y ahí se pagan el mes, la fianza y nuestros honorarios."],
+  ["me", "¿Honorarios? Creía que ahora los pagaba el propietario."],
+  ["them", "Lo consulto con el propietario y te digo, puede que los asuma él."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000004/"
+text = """Getafe Centro Inmobiliaria alquila piso de 3 dormitorios en Getafe centro, calle Madrid.
+85 m², tercero con ascensor, cerca de la estación de Cercanías. 1.150 €/mes."""
+
+[advertiser]
+name = "Getafe Centro Inmobiliaria"
+phone = "+34 916 000 215"

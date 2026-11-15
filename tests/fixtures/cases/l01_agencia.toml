@@ -1,0 +1,24 @@
+id = "l01_agencia"
+label = "legit"
+expect = ["green", "amber"]
+kind = "piso"
+notes = "Agencia identificada, visita presencial, contrato y pago en oficina, fianza depositada en la Comunidad de Madrid."
+
+chat = [
+  ["me", "Buenos días, me interesa el piso de Reyes Católicos. ¿Podría visitarlo?"],
+  ["them", "Buenos días. Claro, tenemos visitas el sábado a las 11:00 o el lunes a las 18:30. Te esperamos en el portal, calle Santiago 12."],
+  ["me", "El sábado a las 11 me viene bien. ¿Qué documentación necesito?"],
+  ["them", "Perfecto, te apunto. Para formalizar necesitamos DNI, contrato de trabajo y las tres últimas nóminas. Si el propietario te acepta, firmamos el contrato en nuestra oficina de la calle Libreros."],
+  ["them", "El día de la firma se paga el primer mes y la fianza (un mes), que depositamos en la Agencia de Vivienda Social de la Comunidad de Madrid como marca la ley. Te damos recibo de todo."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/88765432/"
+text = """Inmobiliaria Lumbre Complutense ofrece piso de 3 dormitorios en el barrio de Reyes Católicos,
+Alcalá de Henares. 90 m², 2 baños, ascensor, calefacción central. 1.050 €/mes. Sin honorarios
+para el inquilino. Requisitos: contrato laboral y nóminas."""
+
+[advertiser]
+name = "Inmobiliaria Lumbre Complutense"
+phone = "+34 918 000 201"
+

@@ -1,0 +1,49 @@
+:root { --bg: #fbfaf7; --fg: #1f2328; --muted: #5b6470; --accent: #0f766e; --accent-fg: #ffffff; --card: #ffffff; --line: #e6e2da;
+        --red: #b42318; --amber: #b54708; --green: #067647; --red-bg: #fef3f2; --amber-bg: #fffaeb; --green-bg: #ecfdf3; --code: #f2efe9; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #15181c; --fg: #e8e6e3; --muted: #a3abb5; --accent: #2dd4bf; --accent-fg: #0b1f1d; --card: #1d2126; --line: #2c3238;
+          --red: #f97066; --amber: #fdb022; --green: #47cd89; --red-bg: #2a1614; --amber-bg: #2a2010; --green-bg: #102a1d; --code: #262b31; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.2rem; margin: 40px 0 8px; }
+.lead { color: var(--muted); font-size: 1.1rem; margin: 0 0 20px; }
+.lights { font-size: 1.4rem; letter-spacing: 4px; margin: 0; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+label { font-weight: 600; display: block; margin-bottom: 6px; }
+.hint { color: var(--muted); font-size: 0.92rem; margin: 4px 0 0; }
+textarea { width: 100%; min-height: 160px; font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); resize: vertical; }
+.files { margin-top: 14px; }
+.pick { display: inline-block; padding: 9px 14px; border-radius: 10px; border: 1px dashed var(--muted); cursor: pointer; font-weight: 500; }
+.pick input { display: none; }
+.thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.thumb { position: relative; width: 72px; height: 72px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb button { position: absolute; top: 2px; right: 2px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: rgba(0,0,0,.65); color: #fff; cursor: pointer; line-height: 22px; padding: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+.btn { background: var(--accent); color: var(--accent-fg); border: 0; padding: 12px 20px; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer; }
+.btn[disabled] { opacity: .6; cursor: wait; }
+.btn.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.error { color: var(--red); margin: 12px 0 0; }
+.result { white-space: pre-wrap; overflow-wrap: anywhere; }
+.result.red { border-color: var(--red); background: var(--red-bg); }
+.result.amber { border-color: var(--amber); background: var(--amber-bg); }
+.result.green { border-color: var(--green); background: var(--green-bg); }
+.result code { background: var(--code); padding: 2px 6px; border-radius: 6px; cursor: copy; font-size: 0.95em; white-space: pre-wrap; }
+.result code.copied { outline: 2px solid var(--accent); }
+.spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; vertical-align: -3px; margin-right: 8px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+ul, ol { padding-left: 1.2em; }
+a { color: var(--accent); }
+[hidden] { display: none !important; }
+.langs { float: right; font-size: 0.95rem; margin-top: 4px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 16px; }
+.example-case { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 0.95rem; color: var(--muted); }
+.brand { margin: 0 0 24px; font-weight: 600; }
+.brand a { text-decoration: none; }
+.guide h1 { margin-top: 8px; }
+.guide h2 { margin-top: 32px; }
+.guide li { margin: 4px 0; }
+.note { border-left: 4px solid var(--accent); padding: 4px 0 4px 14px; margin: 20px 0; }

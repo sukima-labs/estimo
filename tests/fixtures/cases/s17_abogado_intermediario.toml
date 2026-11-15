@@ -1,0 +1,23 @@
+id = "s17_abogado_intermediario"
+label = "scam"
+expect = ["red"]
+expect_signals = ["owner_away", "no_visit", "pay_before_visit"]
+kind = "piso"
+notes = "Propietaria fuera que no puede enseñar el piso: «su abogado» recibe la fianza y el primer mes en una cuenta a su nombre y entrega las llaves cuando llega el dinero. Variante del de las llaves por mensajería."
+
+chat = [
+  ["me", "Hola, me interesa el piso de Delicias. ¿Podría verlo esta semana?"],
+  ["them", "Hola. Yo vivo en Lisboa desde hace dos años por trabajo y no puedo bajar a Madrid. Todo lo lleva mi abogado, el señor Martín Ferrer, de un despacho de Barcelona."],
+  ["them", "Él prepara el contrato. Cuando reciba la fianza y el primer mes (2.100 €) en la cuenta del despacho, ES21 1465 0100 7220 3087 6293, te manda el contrato firmado y te da las llaves en mano."],
+  ["me", "¿No puedo ver el piso antes?"],
+  ["them", "Ahora mismo no hay nadie con llave en Madrid. Pero no te preocupes: si no te gusta al verlo, el abogado te devuelve el dinero. Tengo muchos interesados, necesito saberlo hoy."],
+]
+
+[listing]
+url = "https://www.fotocasa.es/es/alquiler/vivienda/madrid-capital/181777003/d"
+text = """Piso de 2 habitaciones en Delicias (Arganzuela), Madrid. 75 m², amueblado, terraza.
+1.050 €/mes. Disponible ya."""
+
+[advertiser]
+name = "Teresa Lopes"
+phone = "+351 912 345 678"

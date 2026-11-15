@@ -1,0 +1,24 @@
+id = "l17_amiga_visita_reserva_recibo"
+label = "legit"
+expect = ["green", "amber"]
+expect_signals = ["contract_before_payment"]
+kind = "habitacion"
+notes = "Pareja legítima de s20: estudiante de fuera cuya amiga vio la habitación de su parte. La casera pide una reserva pequeña con recibo firmado y sus datos, manda el contrato para leerlo antes, no cobra gestión y la fianza va al organismo oficial. Que la visita la hiciera otra persona no debe bastar para un rojo."
+
+chat = [
+  ["me", "Hola Pilar, soy Marta, la estudiante de Cuenca. Mi amiga Sara fue ayer a ver la habitación de mi parte y le gustó mucho."],
+  ["them", "Hola Marta. Sí, se la enseñé con las otras dos chicas del piso. Si la quieres para septiembre te la guardo."],
+  ["them", "Te pido una reserva de 150 € por transferencia y te mando un recibo firmado con mi nombre, DNI y la dirección. Te adjunto también el contrato para que lo leas con calma."],
+  ["them", "El contrato lo firmamos el 1 de septiembre en el piso, ese día pagas el primer mes y la fianza, y la fianza la deposito en la Comunidad de Madrid. La reserva se descuenta del primer mes."],
+  ["me", "Genial. ¿Me puedes pasar también la referencia catastral para comprobarlo?"],
+  ["them", "Claro, te la paso ahora con el recibo. Y si quieres, hacemos una videollamada con Sara delante para que veas tu cuarto."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000005/"
+text = """Habitación exterior en piso compartido de 3 chicas, cerca de la Universidad de Alcalá. Escritorio,
+armario empotrado y wifi. 430 €/mes, gastos aparte. Particular."""
+
+[advertiser]
+name = "Pilar"
+phone = "+34 600 000 217"

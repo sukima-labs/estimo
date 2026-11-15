@@ -1,0 +1,23 @@
+id = "s20_reserva_gastos_gestion_estudiante"
+label = "scam"
+expect = ["amber", "red"]
+expect_signals = ["evasive_on_checks"]
+kind = "habitacion"
+notes = "Caso real (Granada, octubre de 2026, detenido un hombre con antecedentes): a estudiantes de otras provincias les enseñaba el piso (a ellos o a un amigo) y cobraba a varios la misma plaza como «fianza» y «gastos de gestión», con el contrato para cuando llegaran; al llegar, el piso estaba alquilado. Hay visita y el precio es normal: lo delatan el cobro de gestión al inquilino y que no da ningún documento firmado. Techo honesto: ámbar."
+
+chat = [
+  ["me", "Hola Antonio, soy Clara, la estudiante de Ciudad Real. Mi amiga Lucía fue ayer a ver la habitación de mi parte y le encantó."],
+  ["them", "Sí, muy maja tu amiga. Os la enseñé entera, la habitación grande con escritorio. Gestiono varios pisos del edificio, todos para estudiantes de la UAH."],
+  ["them", "Para guardártela hasta septiembre son 420 € de fianza y 420 € de gastos de gestión, por transferencia a ES91 2100 0418 4502 0005 1332. El contrato lo firmamos cuando llegues."],
+  ["me", "¿Me podrías mandar antes un documento de reserva firmado con tus datos, o el contrato para leerlo?"],
+  ["them", "No hace falta, cuando me llegue te mando el justificante por WhatsApp. Tengo a otros dos chicos preguntando por ella, si la quieres tiene que ser esta semana."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000008/"
+text = """Habitación en piso de estudiantes en el centro de Alcalá de Henares, a 5 minutos de la UAH.
+Habitación doble con escritorio, piso de 4, gastos aparte. 420 €/mes. Curso 2026-2027."""
+
+[advertiser]
+name = "Antonio"
+phone = "+34 600 000 120"

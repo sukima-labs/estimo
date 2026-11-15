@@ -1,0 +1,22 @@
+id = "l06_habitacion_barata"
+label = "legit"
+expect = ["green", "amber"]
+kind = "habitacion"
+notes = "Precio bajo pero explicado (habitación pequeña, interior, a las afueras); visita bienvenida; aún no se habla de pagos."
+
+chat = [
+  ["me", "Hola Diego, ¿la habitación de 280 € sigue libre?"],
+  ["them", "Hola, sí. Te aviso de que es pequeña e interior, por eso está a ese precio. Si quieres verla, pásate esta tarde o mañana, estamos en casa a partir de las 18:00."],
+  ["me", "Vale, me paso mañana a las 18:30."],
+  ["them", "Perfecto, te espero."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/84321098/"
+text = """Habitación pequeña (7 m²) interior, sin armario empotrado, en piso de 4 en la zona de
+Virgen del Val, a 25 minutos andando del centro. 280 €/mes con gastos incluidos."""
+
+[advertiser]
+name = "Diego"
+phone = "+34 600 000 206"
+

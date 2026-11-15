@@ -1,0 +1,24 @@
+id = "l16_ex_turistico_nota_simple"
+label = "legit"
+expect = ["green", "amber"]
+expect_signals = ["in_person_visit"]
+absent_signals = ["evasive_on_checks", "pay_before_visit", "no_visit"]
+kind = "piso"
+notes = "Pareja legítima de s18: la propietaria tuvo el piso en Airbnb y ahora lo alquila por larga duración. Tras la visita, da la nota simple sin problema y cobra al firmar en persona. No debe salir en rojo por haber sido turístico."
+
+chat = [
+  ["me", "Hola Elena, soy Iván, el que vio ayer el piso de Embajadores. Me gustó mucho y me lo quedo."],
+  ["me", "Una cosa que vi: la puerta tiene cerradura de código y en la cocina había un cartel de normas para huéspedes. ¿Se alquilaba por días?"],
+  ["them", "Sí, estuvo en Airbnb hasta el verano, pero di de baja la licencia y ahora solo lo alquilo por larga duración. Cambiaré la cerradura antes de que entres."],
+  ["me", "Perfecto. Antes de pagar, ¿me puedes pasar la nota simple o un recibo del IBI a tu nombre?"],
+  ["them", "Claro, te mando ahora la nota simple. Si te parece, firmamos el contrato el viernes a las 18:00 en el piso y ese día me pagas la fianza y el primer mes. La fianza la deposito en la Agencia de Vivienda Social."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/100000002/"
+text = """Piso de 1 dormitorio en Embajadores (Centro), Madrid. 48 m², reformado, amueblado y equipado.
+Alquiler de larga duración: 1.250 €/mes. Visitas esta semana."""
+
+[advertiser]
+name = "Elena Sanz"
+phone = "+34 600 000 216"

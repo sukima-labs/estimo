@@ -1,0 +1,24 @@
+id = "s01_airbnb_llaves"
+label = "scam"
+expect = ["red"]
+kind = "piso"
+notes = "Propietaria en Londres, pago a «Airbnb» antes de ver el piso, llaves enviadas después, IBAN GB."
+
+chat = [
+  ["me", "Hola, he visto el piso de la calle Libreros. ¿Sigue disponible? ¿Cuándo se podría ver?"],
+  ["them", "Hola, sí, sigue disponible. Te cuento: el piso era de mi madre, que falleció el año pasado. Yo vivo en Londres por trabajo y no puedo ir a enseñarlo."],
+  ["them", "Para que estemos los dos tranquilos lo hacemos a través de Airbnb. Tú pagas la fianza y el primer mes (1.500 €) al departamento de pagos de Airbnb, ellos me mandan las llaves y te las envían a casa."],
+  ["them", "Tienes 48 horas para ver el piso con las llaves. Si no te gusta, Airbnb te devuelve el dinero íntegro."],
+  ["me", "¿Y no puede enseñármelo alguien antes?"],
+  ["them", "Lo siento, no tengo a nadie en España. La transferencia es a esta cuenta de Airbnb: GB82 WEST 1234 5698 7654 32 a nombre de Airbnb Payments Ltd. Hay más personas interesadas, dime algo hoy."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/98765432/"
+text = """Piso de 3 dormitorios en calle Libreros, Alcalá de Henares. 85 m², reformado, amueblado,
+calefacción central. Larga duración. 750 €/mes. Disponible ya."""
+
+[advertiser]
+name = "María Ferrer"
+phone = "+44 7700 900123"
+

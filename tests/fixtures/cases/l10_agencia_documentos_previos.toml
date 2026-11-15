@@ -1,0 +1,20 @@
+id = "l10_agencia_documentos_previos"
+label = "legit"
+expect = ["amber", "green"]
+kind = "piso"
+notes = "Legítimo raro, como el primer caso real (01-10-2026): agencia identificada que pide nóminas por correo antes de enseñar el piso, para filtrar; sin pagos ni prisa."
+
+chat = [
+  ["me", "Hola, me interesa el piso de la calle Nueva. ¿Se podría ver esta semana?"],
+  ["them", "Hola, gracias por contactar con Inmobiliaria Lumbre Complutense. Antes de organizar visitas el propietario nos pide filtrar: ¿nos puedes enviar a info@lumbre-complutense.example las dos últimas nóminas y el contrato de trabajo?"],
+  ["them", "Con eso te llamamos y te damos cita. Nuestra oficina está en la calle Libreros 20, por si prefieres traerlos en persona."],
+]
+
+[listing]
+url = "https://www.idealista.com/inmueble/80987654/"
+text = """Inmobiliaria Lumbre Complutense. Piso de 2 dormitorios en calle Nueva, centro de Alcalá de
+Henares. 950 €/mes. Requisitos: contrato indefinido y nóminas."""
+
+[advertiser]
+name = "Inmobiliaria Lumbre Complutense"
+phone = "+34 918 000 201"
