@@ -61,6 +61,7 @@ def _dir_url(path: str) -> str:
     """/guias/x -> /estimo/guias/x/ ; /site.css -> /estimo/site.css ; / -> /estimo/"""
     if path == "/":
         return BASE + "/"
+    path = path.rstrip("/")
     last = path.rsplit("/", 1)[-1]
     return BASE + path + ("" if "." in last else "/")
 
