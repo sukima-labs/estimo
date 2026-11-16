@@ -7,7 +7,8 @@ known scams.
 
 - Archive site (guides ES+EN, example report): <https://sukimalabs.com/estimo/>
 - Post-mortem (Spanish): [POSTMORTEM.md](POSTMORTEM.md)
-- Licence: MIT
+- Licence: MIT. Copyright holder: Patricio Llorens (`nyakojiru`) until Sukima Labs is a legal entity
+  (see `LICENCIAS.md` in the `foro` repo).
 
 ## What is in here
 
